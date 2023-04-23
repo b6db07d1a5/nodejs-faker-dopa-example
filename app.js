@@ -32,6 +32,8 @@ app.post("/dopa", async (req, res) => {
   res.status(ret.statusCode).send(JSON.parse(ret.body));
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`);
+// });
+
+module.exports = app;
